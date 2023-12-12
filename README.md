@@ -27,3 +27,27 @@ if(boolean):
     print("Strings are nearly equal.")
 else:
     print("Strings are not equal.")
+
+
+
+
+
+
+duplicate
+
+
+def dups(numlist):
+    duplicates={}
+    for ele in numlist:
+        c=numlist.count(ele)
+        if(c>=2):
+            duplicates[ele]=c
+    print("Duplicate elements are:\n",duplicates)
+    return
+
+numlist=[]
+n=int(input("Enter number of elements to be insert:\n"))
+for i in range(n):
+    ele=int(input("Enter element"))
+    numlist.append(ele)
+dups(numlist)
